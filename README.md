@@ -43,9 +43,6 @@ The experiments can then be executed using `python main.py` after installing the
 
 ## Results
 
-
-## Results
-
 The following figure illustrates the performance of three independently trained PPO agents compared with Markowitz mean-variance optimization and an equally weighted benchmark.
 
 ![Portfolio performance comparison](figures/figure.png)
