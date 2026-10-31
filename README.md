@@ -21,10 +21,6 @@ The experiments consider:
 - Two historical market periods, including one covering the global financial crisis
 - Evaluation using multiple portfolio performance and risk metrics
 
-## Technologies
-
-Python, NumPy, pandas, SciPy, scikit-learn, Gymnasium, Stable-Baselines3, Matplotlib, and yfinance.
-
 ## Repository Structure
 
 - `main.py` — Experiment configuration and execution
@@ -44,6 +40,19 @@ Historical market data is retrieved using yfinance.
 To train new PPO models, set `train_models = True` in `main.py`. Otherwise, previously trained models must be available at the configured paths.
 
 The experiments can then be executed using `python main.py` after installing the required Python dependencies.
+
+## Results
+
+
+## Results
+
+The following figure illustrates the performance of three independently trained PPO agents compared with Markowitz mean-variance optimization and an equally weighted benchmark.
+
+![Portfolio performance comparison](figures/figure.png)
+
+The PPO agents were trained using different random seeds to investigate the variability of the reinforcement learning approach.
+
+The complete experimental setup, results, and discussion can be found in the accompanying bachelor's thesis.
 
 ## Bachelor's Thesis
 
