@@ -20,15 +20,15 @@ def main():
     rl_configs = {
         "RL model 1": {
             "seed": 1,
-            "path": "ppo_portfolio_seed1_500k_monthly_tc",
+            "path": "models/ppo_portfolio_seed1_500k_monthly_tc",
         },
         "RL model 2": {
             "seed": 2,
-            "path": "ppo_portfolio_seed2_500k_monthly_tc",
+            "path": "models/ppo_portfolio_seed2_500k_monthly_tc",
         },
         "RL model 3": {
             "seed": 3,
-            "path": "ppo_portfolio_seed3_500k_monthly_tc",
+            "path": "models/ppo_portfolio_seed3_500k_monthly_tc",
         },
     }
 
