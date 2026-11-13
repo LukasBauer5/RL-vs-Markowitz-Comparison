@@ -43,7 +43,13 @@ def run_rl(
         decision_frequency,
         rl_paths
 ):
-    first_decision_idx = returns.index.get_loc(test_rebal_dates[0])
+    first_rebal_idx = returns.index.get_loc(test_rebal_dates[0])
+
+    first_decision_idx = (
+      first_rebal_idx + 1
+      if decision_frequency == "daily"
+      else first_rebal_idx
+    )
 
     rl_results = {}
 
