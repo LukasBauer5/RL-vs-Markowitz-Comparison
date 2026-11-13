@@ -110,9 +110,6 @@ def run_rl(
         if len(daily_list) > 0:
             rl_returns = pd.concat(daily_list)
 
-            if env.decision_frequency == "daily":
-                rl_returns = rl_returns.iloc[1:]
-
             rl_turnover = pd.Series(turnover_list, index=decision_dates, name=f"{label} turnover")
             rl_weights = pd.DataFrame(weights_list, index=decision_dates, columns=returns.columns)
 
