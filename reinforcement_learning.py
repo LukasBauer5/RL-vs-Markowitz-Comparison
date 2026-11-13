@@ -93,7 +93,7 @@ def run_rl(
             obs, _, terminated, truncated, info = env.step(action)
             done = terminated or truncated
 
-            turnover_list.append(info["portfolio turnover"])
+            turnover_list.append(info["portfolio turnover"] if steps_taken > 0 else 0.0)
 
             if env.decision_frequency == "daily":
                 holding_period_returns = returns.iloc[decision_t: env.t]
